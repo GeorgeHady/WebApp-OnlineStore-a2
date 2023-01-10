@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Spring Flowers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/functions.js"></script>
+</head>
+
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container">
+
+        <div class="header row">
+            <p class="col-10 my-custom-box">Spring Flowers</p>
+            <img src="img/logo.jpg" alt="Spring Flowers logo" class="col-2 align-self-center">
+        </div>
+
+        <div class="row mt-4">
+
+
+
+            <!-- //////////////////// categories //////////////////// -->
+            <div class="col-2 p-0 m-0">
+                <div class="list-group my-custom-box">
+                    <h4 class="text-center">Product categories</h4>
+                    <div id="categories">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- //////////////////// catalog //////////////////// -->
+            <div class="col-7">
+                <div id="catalog">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Product ID</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">In Stock</th>
+                            </tr>
+                        </thead>
+                        <tbody id="flowerList">
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <a id="previousList" class='col-3'>
+                            <img class="arrow-img arrowprevious pointer" src="img/arrowprevious.png"
+                                alt="arrowprevious">
+                        </a>
+                        <p id="printListNumber" class="col-6 list-count-lable">
+                        </p>
+                        <a id="nextList" class='col-3'>
+                            <img class="arrow-img arrownext pointer" src="img/arrownext.png" alt="arrownext">
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- /////////////////////// card ///////////////////// -->
+                <div id="card" class="card">
+                    <div class="top-right pointer">
+                        <a id="card-exit">X</a>
+                    </div>
+
+                    <img id="card-image" alt="flower image">
+
+                    <h3 id="card-name"></h3>
+                    <p id="card-price" class="price"></p>
+                    <p>Product Code: <span id="card-id"></span></p>
+                    <p id="card-description"> </p>
+
+                    <input type="button" id="card-button" class="button-add" value="Add to Cart">
+                </div>
+
+            </div>
+
+
+
+
+            <!-- //////////////////// cart ////////////////////// -->
+            <div id="cart" class="col-3 p-0">
+
+                <div class="list-group my-custom-box">
+                    <h4 class="text-center">Shopping Cart</h4>
+                    <hr>
+
+                    <div id="cartList" class="row cart">
+
+                    </div>
+
+                    <hr>
+                    <label id="total" class="text-center font-weight-bold">Total: </label>
+                    <input type="submit" class="button-add" name="" value="Checkout">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- //////////////////// footer //////////////////// -->
+        <div class="row mt-4">
+            <div>
+                <hr>
+                <p class="text-center">footer text</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
